@@ -1,0 +1,359 @@
+/**
+ *
+ * Font
+ *
+ */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Mono&family=Lato:wght@700&display=swap');
+
+/**
+ *
+ * Root
+ *
+ */
+:root {
+    --dark: #343a40;
+    --primary: #e77204;
+    --primaryHover: #ce6707;
+    --secondary: #6c757d;
+    --secondaryHover: #6c757d;
+    --grey: #6c757d;
+    --title: 'Lato', sans-serif;
+    --text: 'Open Sans', sans-serif;
+    --monospace: 'Roboto Mono', monospace;
+}
+
+/**
+ *
+ * General style
+ *
+ */
+html,
+body {
+    background: #f9f9f9;
+    font-family: var(--text);
+    font-size: 12px;
+    height: 100%
+}
+
+.no-wrap>table {
+    white-space: nowrap;
+}
+
+
+/**
+ *
+ * Colors
+ *
+ */
+.btn-primary,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #fff;
+    background-color: var(--primaryHover);
+    border-color: var(--primaryHover);
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: var(--secondaryHover);
+    border-color: var(--secondaryHover);
+}
+
+/**
+ *
+ * Typography
+ *
+ */
+.monospace {
+    font-family: var(--monospace);
+}
+
+.table thead th,
+.modal-title,
+.page-name {
+    font-family: var(--title);
+
+}
+
+.table thead th,
+.modal-title {
+    font-size: 1.1rem;
+    letter-spacing: .05rem;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/**
+ *
+ * Menu
+ *
+ */
+.sidebar-brand {
+    margin: 1rem 0;
+    max-width: 150px;
+    padding-left: 5px;
+}
+
+.v-sidebar-menu.vsm_white-theme {
+    background-color: #fff;
+}
+
+.v-sidebar-menu .vsm--toggle-btn {
+    color: #fff;
+    background-color: var(--secondary);
+}
+
+.v-sidebar-menu.vsm_white-theme .vsm--link {
+    color: #444;
+}
+
+.v-sidebar-menu .vsm--dropdown .vsm--link {
+    color: var(--dark);
+}
+
+.v-sidebar-menu .vsm--link_level-1 .vsm--icon {
+    background-color: #1e1e21;
+    color: #fff;
+}
+
+.v-sidebar-menu .vsm--link {
+    font-size: 10px;
+}
+
+.v-sidebar-menu .vsm--icon {
+    padding: 8px;
+}
+
+.v-sidebar-menu .vsm--dropdown>.vsm--list {
+    padding: 0px;
+}
+
+.v-sidebar-menu.vsm_white-theme .vsm--link_level-1.vsm--link_exact-active .vsm--icon,
+.v-sidebar-menu.vsm_white-theme .vsm--link_level-1.vsm--link_active .vsm--icon {
+    background-color: var(--secondary);
+}
+
+/* Background menu a tendina */
+.v-sidebar-menu.vsm_white-theme .vsm--dropdown .vsm--list {
+    background-color: #f5f5f5;
+}
+
+.v-sidebar-menu.vsm_white-theme .vsm--link_level-1.vsm--link_active {
+    -webkit-box-shadow: 3px 0px 0px 0px var(--primary) inset;
+    box-shadow: 3px 0px 0px 0px var(--primary) inset;
+}
+
+.v-sidebar-menu.vsm_white-theme.vsm_collapsed .vsm--link_level-1.vsm--link_hover .vsm--icon,
+.v-sidebar-menu.vsm_white-theme.vsm_collapsed .vsm--link_level-1:hover .vsm--icon {
+    background: var(--secondary);
+}
+
+.v-sidebar-menu.vsm_white-theme .vsm--mobile-bg {
+    background-color: var(--primary);
+}
+
+.v-sidebar-menu.vsm_white-theme.vsm_white-theme .vsm--dropdown .vsm--link:hover {
+    background-color: var(--primary);
+    color: #fff
+}
+
+.vsm--mobile-item>.vsm--item>.vsm--link {
+    color: #fff;
+}
+
+/**
+ *
+ * Navbar
+ *
+ */
+.navbar {
+    color: #999;
+    padding: .5rem 1rem;
+}
+
+.nav--icon-link {
+    font-size: 10px;
+}
+
+.expand {
+    padding: 8px 50px 8px 100px;
+}
+
+.shrink {
+    padding: 8px 50px 8px 300px;
+}
+
+/**
+ *
+ * Table
+ *
+ */
+.table.b-table>tbody>.table-active>td.table-light,
+.table-active>td.table-light {
+    background-color: #fff
+}
+
+/**
+ *
+ * Form
+ *
+ */
+legend {
+    white-space: normal;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    color: var(--grey);
+}
+
+legend.col-form-label {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    font-size: 11px;
+    color: var(--dark);
+    letter-spacing: .5px;
+}
+
+label.required::after {
+    content: '*';
+    color: red;
+    font-size: .9rem;
+    margin-left: .3rem;
+}
+
+.group-label {
+    margin: 1rem 0;
+}
+
+/**
+ *
+ * Buttons
+ *
+ */
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: .15rem .4rem;
+    font-size: 0.775rem;
+    line-height: 1.5;
+    border-radius: 0rem;
+}
+
+.btn-group-md>.btn,
+.btn-md:not([type="submit"]) {
+    padding: .35rem 0.7rem;
+    font-size: .8rem;
+    line-height: 1.5;
+    border-radius: 0rem;
+}
+
+.form-control,
+.custom-select,
+.select2-container .select2-selection--single {
+    border-radius: 0px;
+}
+
+.form-control,
+.custom-select,
+.form-control-md,
+.custom-select-md,
+.select2-container .select2-selection--single {
+    height: 32px;
+}
+
+/**
+ *
+ * Dropdown menu table action
+ *
+ */
+.actions-menu .dropdown-menu {
+    min-width: 12rem;
+}
+
+.actions-menu .dropdown-item {
+    padding: .25rem 1rem;
+}
+
+.actions-menu .dropdown-item>.btn {
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+
+.actions-menu .dropdown-item>.btn>.action--item {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.actions-menu .dropdown-item:focus,
+.actions-menu .dropdown-item:hover {
+    background: #eee;
+}
+
+.actions-menu .dropdown-item>.btn:hover {
+    text-decoration: none;
+}
+
+/**
+ *
+ * Tabs
+ *
+ */
+.nav-tabs .nav-link {
+    color: var(--gray);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background: transparent;
+    color: var(--dark);
+    border-color: transparent;
+    border-bottom: 2px solid var(--primary);
+}
+
+.nav-tabs .nav-link svg {
+    margin-right: 2px;
+}
+
+.nav-tabs .nav-link.active svg {
+    color: var(--primary);
+}
+
+/**
+ *
+ * Media query
+ *
+ */
+@media(max-width: 767px) {
+    .expand {
+        padding: 8px 0px 8px 45px;
+    }
+}
